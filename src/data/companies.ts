@@ -135,7 +135,7 @@ export const companies: Company[] = [
     },
     region: 'Quetta Division'
   },
-   {
+    {
     id: 'IESCO',
     name: 'IESCO',
     fullName: 'ISLAMABAD Electric Supply Company',
@@ -150,4 +150,5 @@ export const companies: Company[] = [
     },
     region: 'Islamabad Division'
   },
+  // Add other companies here if needed
 ];
