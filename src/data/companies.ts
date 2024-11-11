@@ -136,8 +136,8 @@ export const companies: Company[] = [
     region: 'Quetta Division'
   },
     {
-    id: 'IESCO',
-    name: 'IESCO',
+    id: 'SNGPL',
+    name: 'SNGPL',
     fullName: 'ISLAMABAD Electric Supply Company',
     description: 'Powering Islamabad with reliable electricity distribution.',
     endpoint: 'https://www.sngpl.com.pk/viewbill?proc=viewbill&contype=NewCon&mdids=85&consumer=',
