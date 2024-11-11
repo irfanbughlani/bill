@@ -22,11 +22,11 @@ export const companies: Company[] = [
     description: 'Serving the greater Lahore region with reliable electricity distribution.',
     endpoint: 'https://bill.pitc.com.pk/lescobill/general?refno=',
     colorClass: {
-      from: 'from-blue-600',
-      to: 'to-blue-700',
-      button: 'bg-blue-600',
-      buttonHover: 'hover:bg-blue-700',
-      icon: 'text-blue-600'
+      from: 'from-green-500',
+      to: 'to-green-700',
+      button: 'bg-green-600',
+      buttonHover: 'hover:bg-green-700',
+      icon: 'text-green-600'
     },
     region: 'Lahore Division'
   },
@@ -37,11 +37,11 @@ export const companies: Company[] = [
     description: 'Providing power to Faisalabad and surrounding districts.',
     endpoint: 'https://bill.pitc.com.pk/fescobill/general?refno=',
     colorClass: {
-      from: 'from-green-600',
-      to: 'to-green-700',
-      button: 'bg-green-600',
-      buttonHover: 'hover:bg-green-700',
-      icon: 'text-green-600'
+        from: 'from-indigo-600',
+      to: 'to-indigo-700',
+      button: 'bg-indigo-600',
+      buttonHover: 'hover:bg-indigo-700',
+      icon: 'text-indigo-600'
     },
     region: 'Faisalabad Division'
   },
@@ -52,11 +52,11 @@ export const companies: Company[] = [
     description: 'Serving the southern Punjab region with efficient power distribution.',
     endpoint: 'https://bill.pitc.com.pk/mepcobill/general?refno=',
     colorClass: {
-      from: 'from-purple-600',
-      to: 'to-purple-700',
-      button: 'bg-purple-600',
-      buttonHover: 'hover:bg-purple-700',
-      icon: 'text-purple-600'
+       from: 'from-red-600',
+      to: 'to-red-700',
+      button: 'bg-red-600',
+      buttonHover: 'hover:bg-red-700',
+      icon: 'text-red-600'
     },
     region: 'Multan Division'
   },
@@ -67,11 +67,11 @@ export const companies: Company[] = [
     description: 'Powering the Hyderabad region with reliable electricity services.',
     endpoint: 'https://bill.pitc.com.pk/hescobill/general?refno=',
     colorClass: {
-      from: 'from-red-600',
-      to: 'to-red-700',
-      button: 'bg-red-600',
-      buttonHover: 'hover:bg-red-700',
-      icon: 'text-red-600'
+   from: 'from-orange-600',
+      to: 'to-orange-700',
+      button: 'bg-orange-600',
+      buttonHover: 'hover:bg-orange-700',
+      icon: 'text-orange-600'
     },
     region: 'Hyderabad Division'
   },
@@ -97,11 +97,11 @@ export const companies: Company[] = [
     description: 'Serving the Gujranwala division with quality power supply.',
     endpoint: 'https://bill.pitc.com.pk/gepcobill/general?refno=',
     colorClass: {
-      from: 'from-orange-600',
-      to: 'to-orange-700',
-      button: 'bg-orange-600',
-      buttonHover: 'hover:bg-orange-700',
-      icon: 'text-orange-600'
+     from: 'from-green-600',
+      to: 'to-green-700',
+      button: 'bg-green-600',
+      buttonHover: 'hover:bg-green-700',
+      icon: 'text-green-600'
     },
     region: 'Gujranwala Division'
   },
@@ -127,11 +127,11 @@ export const companies: Company[] = [
     description: 'Powering Balochistan with reliable electricity distribution.',
     endpoint: 'https://bill.pitc.com.pk/qescobill/general?refno=',
     colorClass: {
-      from: 'from-indigo-600',
-      to: 'to-indigo-700',
-      button: 'bg-indigo-600',
-      buttonHover: 'hover:bg-indigo-700',
-      icon: 'text-indigo-600'
+     from: 'from-purple-600',
+      to: 'to-purple-700',
+      button: 'bg-purple-600',
+      buttonHover: 'hover:bg-purple-700',
+      icon: 'text-purple-600'
     },
     region: 'Quetta Division'
   },
