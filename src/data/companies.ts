@@ -138,7 +138,7 @@ export const companies: Company[] = [
     {
     id: 'IESCO',
     name: 'IESCO',
-    fullName: 'ISLAMABAD Electric Supply Company',
+    fullName: 'Islamabad Electric Supply Company',
     description: 'Powering Islamabad with reliable electricity distribution.',
     endpoint: 'https://bill.pitc.com.pk/iescobill/general?refno=',
     colorClass: {
@@ -149,6 +149,21 @@ export const companies: Company[] = [
       icon: 'text-indigo-600'
     },
     region: 'Islamabad Division'
+  },
+{
+    id: 'TESCO',
+    name: 'TESCO',
+    fullName: 'Tribal Area Electric Supply Company',
+    description: 'Powering Tribal Area with reliable electricity distribution.',
+    endpoint: 'https://bill.pitc.com.pk/tescobill/general?refno=',
+    colorClass: {
+      from: 'from-indigo-600',
+      to: 'to-indigo-700',
+      button: 'bg-indigo-600',
+      buttonHover: 'hover:bg-indigo-700',
+      icon: 'text-indigo-600'
+    },
+    region: 'Tribal Area'
   },
   // Add other companies here if needed
 ];
