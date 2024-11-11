@@ -28,7 +28,7 @@ const CompanyPage: React.FC<CompanyPageProps> = ({ company }) => {
             <Zap className="h-16 w-16" />
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold text-center mb-4">
-            {company.name} BILL Online Check
+            {company.name} Bill Online Check
           </h1>
           <p className="text-xl text-center max-w-3xl mx-auto opacity-90">
             {company.description}
