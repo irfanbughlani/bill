@@ -135,4 +135,19 @@ export const companies: Company[] = [
     },
     region: 'Quetta Division'
   }
+   {
+    id: 'LESCO',
+    name: 'LESCO',
+    fullName: 'ISLAMABAD Electric Supply Company',
+    description: 'Powering Islamabad with reliable electricity distribution.',
+    endpoint: 'https://bill.pitc.com.pk/iescobill/general?refno=',
+    colorClass: {
+      from: 'from-indigo-600',
+      to: 'to-indigo-700',
+      button: 'bg-indigo-600',
+      buttonHover: 'hover:bg-indigo-700',
+      icon: 'text-indigo-600'
+    },
+    region: 'Islamabad Division'
+  }
 ];
