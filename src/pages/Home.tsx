@@ -57,7 +57,7 @@ const Home = () => {
                 <Zap className={`h-10 w-10 ${company.colorClass.icon}`} />
                 <ArrowRight className="h-6 w-6 text-gray-400 group-hover:text-gray-600 transition-colors" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">{company.name} BILL</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">{company.name} Bill</h3>
               <p className="text-sm text-gray-600 mb-3">{company.fullName}</p>
               <div className="mt-4 text-sm font-medium text-gray-500">{company.region}</div>
               <button className={`mt-4 w-full px-4 py-2 ${company.colorClass.button} text-white rounded-lg ${company.colorClass.buttonHover} transition-colors`}>
