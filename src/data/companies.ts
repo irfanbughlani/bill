@@ -37,11 +37,11 @@ export const companies: Company[] = [
     description: 'Providing power to Faisalabad and surrounding districts.',
     endpoint: 'https://bill.pitc.com.pk/fescobill/general?refno=',
     colorClass: {
-        from: 'from-indigo-600',
-      to: 'to-indigo-700',
-      button: 'bg-indigo-600',
-      buttonHover: 'hover:bg-indigo-700',
-      icon: 'text-indigo-600'
+        from: 'from-fuchsia-600',
+      to: 'to-fuchsia-700',
+      button: 'bg-fuchsia-600',
+      buttonHover: 'hover:bg-fuchsia-700',
+      icon: 'text-fuchsia-600'
     },
     region: 'Faisalabad Division'
   },
@@ -52,11 +52,11 @@ export const companies: Company[] = [
     description: 'Serving the southern Punjab region with efficient power distribution.',
     endpoint: 'https://bill.pitc.com.pk/mepcobill/general?refno=',
     colorClass: {
-       from: 'from-pink-600',
-      to: 'to-pink-700',
-      button: 'bg-pink-600',
-      buttonHover: 'hover:bg-pink-700',
-      icon: 'text-pink-600'
+       from: 'from-rose-600',
+      to: 'to-rose-700',
+      button: 'bg-rose-600',
+      buttonHover: 'hover:bg-rose-700',
+      icon: 'text-rose-600'
     },
     region: 'Multan Division'
   },
