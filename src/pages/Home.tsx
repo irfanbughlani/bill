@@ -46,7 +46,7 @@ const Home = () => {
      {/* Companies Grid */}
 <h2 id="companies" className="text-3xl font-bold text-gray-900 mb-8 text-center">Select Your Electricity Provider</h2>
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-  {companies.slice(0, 9).map((company) => (
+  {companies.slice(0, 10).map((company) => (
     <Link
       key={company.id}
       to={`/${company.id.toLowerCase()}`}
