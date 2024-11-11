@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Tesseract from 'tesseract.js';
 
 const OcrCaptchaSolver: React.FC = () => {
+  const [consumerNumber, setConsumerNumber] = useState<string>('');
   const [captchaImage, setCaptchaImage] = useState<string | null>(null);
   const [captchaText, setCaptchaText] = useState<string>('');
   const [billData, setBillData] = useState<any>(null);
@@ -10,10 +11,10 @@ const OcrCaptchaSolver: React.FC = () => {
   const captchaUrl = 'https://www.sngpl.com.pk/captcha-image.jpg';
   const billEndpoint = 'https://www.sngpl.com.pk/viewbill?proc=viewbill&contype=NewCon&mdids=85&consumer=';
 
-  // Step 1: Fetch CAPTCHA Image on Component Load
+  // Step 1: Fetch CAPTCHA Image
   const fetchCaptchaImage = () => {
     setLoading(true);
-    fetch(captchaUrl, { method: 'GET', cache: 'no-cache' })  // Ensure it doesn't cache the image
+    fetch(captchaUrl, { method: 'GET', cache: 'no-cache' })  // Prevent caching
       .then(response => response.blob())
       .then(blob => {
         setCaptchaImage(URL.createObjectURL(blob));
@@ -26,10 +27,10 @@ const OcrCaptchaSolver: React.FC = () => {
   };
 
   useEffect(() => {
-    fetchCaptchaImage(); // Load a new CAPTCHA on component mount
+    fetchCaptchaImage(); // Fetch a new CAPTCHA image on component mount
   }, []);
 
-  // Step 2: Solve CAPTCHA Image with OCR
+  // Step 2: Solve CAPTCHA using OCR
   const solveCaptcha = () => {
     if (!captchaImage) return;
     setLoading(true);
@@ -46,20 +47,24 @@ const OcrCaptchaSolver: React.FC = () => {
       });
   };
 
-  // Step 3: Fetch Bill Data using Solved CAPTCHA Text
+  // Step 3: Fetch Bill Data using Solved CAPTCHA Text and Consumer Number
   const fetchBill = () => {
-    if (!captchaText) return;
+    if (!captchaText || !consumerNumber) {
+      alert('Please enter a valid consumer number and solve the CAPTCHA');
+      return;
+    }
 
-    const consumerId = '14914400008';  // Example consumer ID
     const params = new URLSearchParams({
-      consumer: consumerId,
+      proc: 'viewbill',
+      contype: 'NewCon',
+      mdids: '85',
+      consumer: consumerNumber,
       captcha: captchaText,
     });
 
-    fetch(`${billEndpoint}${consumerId}`, {
+    fetch(`${billEndpoint}?${params.toString()}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: params.toString(),
     })
       .then(response => response.json())  // Assuming JSON response
       .then(data => setBillData(data))
@@ -69,6 +74,17 @@ const OcrCaptchaSolver: React.FC = () => {
   return (
     <div>
       <h2>OCR CAPTCHA Solver</h2>
+
+      {/* Consumer Number Input */}
+      <div>
+        <label>Enter Consumer Number:</label>
+        <input
+          type="text"
+          value={consumerNumber}
+          onChange={(e) => setConsumerNumber(e.target.value)}
+          placeholder="Consumer Number"
+        />
+      </div>
 
       {/* CAPTCHA Image */}
       {captchaImage && (
@@ -82,7 +98,7 @@ const OcrCaptchaSolver: React.FC = () => {
 
       {/* Solve CAPTCHA Button */}
       <button onClick={solveCaptcha} disabled={loading || !captchaImage}>
-        {loading ? 'Processing...' : 'Solve CAPTCHA'}
+        {loading ? 'Processing...' : 'Solve CAPTCHA'
       </button>
 
       {/* Display OCR Result */}
@@ -94,7 +110,7 @@ const OcrCaptchaSolver: React.FC = () => {
       )}
 
       {/* Fetch Bill Button */}
-      <button onClick={fetchBill} disabled={!captchaText || loading}>
+      <button onClick={fetchBill} disabled={!captchaText || !consumerNumber || loading}>
         Fetch Bill
       </button>
 
