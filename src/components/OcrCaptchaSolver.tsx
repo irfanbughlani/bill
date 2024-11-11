@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Tesseract from 'tesseract.js';
+import companies from './path/to/companies'; // Adjust the path based on where you store the config file
 
 const OcrCaptchaSolver: React.FC = () => {
   const [consumerNumber, setConsumerNumber] = useState<string>('');
@@ -8,8 +9,9 @@ const OcrCaptchaSolver: React.FC = () => {
   const [billData, setBillData] = useState<any>(null);
   const [loading, setLoading] = useState<boolean>(false);
 
+  // Choose the company dynamically (you could also pass it as a prop)
+  const selectedCompany = companies.find(company => company.id === 'IESCO');
   const captchaUrl = 'https://www.sngpl.com.pk/captcha-image.jpg';
-  const billEndpoint = 'https://www.sngpl.com.pk/viewbill?proc=viewbill&contype=NewCon&mdids=85&consumer=';
 
   // Step 1: Fetch CAPTCHA Image
   const fetchCaptchaImage = () => {
@@ -54,17 +56,13 @@ const OcrCaptchaSolver: React.FC = () => {
       return;
     }
 
-    const params = new URLSearchParams({
-      proc: 'viewbill',
-      contype: 'NewCon',
-      mdids: '85',
-      consumer: consumerNumber,
-      captcha: captchaText,
-    });
+    // Construct the URL dynamically with the consumer number
+    const billUrl = `${selectedCompany?.endpoint}${consumerNumber}`;
 
-    fetch(`${billEndpoint}?${params.toString()}`, {
+    fetch(billUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({ captcha: captchaText }).toString(),
     })
       .then(response => response.json())  // Assuming JSON response
       .then(data => setBillData(data))
@@ -73,7 +71,8 @@ const OcrCaptchaSolver: React.FC = () => {
 
   return (
     <div>
-      <h2>OCR CAPTCHA Solver</h2>
+      <h2>OCR CAPTCHA Solver - {selectedCompany?.name}</h2>
+      <p>{selectedCompany?.description}</p>
 
       {/* Consumer Number Input */}
       <div>
@@ -83,6 +82,7 @@ const OcrCaptchaSolver: React.FC = () => {
           value={consumerNumber}
           onChange={(e) => setConsumerNumber(e.target.value)}
           placeholder="Consumer Number"
+          className="border rounded px-3 py-2"
         />
       </div>
 
@@ -90,15 +90,15 @@ const OcrCaptchaSolver: React.FC = () => {
       {captchaImage && (
         <div>
           <img src={captchaImage} alt="CAPTCHA" style={{ marginTop: '20px', maxWidth: '100%' }} />
-          <button onClick={fetchCaptchaImage} disabled={loading}>
+          <button onClick={fetchCaptchaImage} disabled={loading} className={`${selectedCompany?.colorClass.button} ${selectedCompany?.colorClass.buttonHover} text-white rounded px-4 py-2 mt-2`}>
             {loading ? 'Refreshing...' : 'Refresh CAPTCHA'}
           </button>
         </div>
       )}
 
       {/* Solve CAPTCHA Button */}
-      <button onClick={solveCaptcha} disabled={loading || !captchaImage}>
-        {loading ? 'Processing...' : 'Solve CAPTCHA'
+      <button onClick={solveCaptcha} disabled={loading || !captchaImage} className={`${selectedCompany?.colorClass.button} ${selectedCompany?.colorClass.buttonHover} text-white rounded px-4 py-2 mt-2`}>
+        {loading ? 'Processing...' : 'Solve CAPTCHA'}
       </button>
 
       {/* Display OCR Result */}
@@ -110,7 +110,7 @@ const OcrCaptchaSolver: React.FC = () => {
       )}
 
       {/* Fetch Bill Button */}
-      <button onClick={fetchBill} disabled={!captchaText || !consumerNumber || loading}>
+      <button onClick={fetchBill} disabled={!captchaText || !consumerNumber || loading} className={`${selectedCompany?.colorClass.button} ${selectedCompany?.colorClass.buttonHover} text-white rounded px-4 py-2 mt-2`}>
         Fetch Bill
       </button>
 
