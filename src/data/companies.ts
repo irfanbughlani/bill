@@ -22,11 +22,11 @@ export const companies: Company[] = [
     description: 'Serving the greater Lahore region with reliable electricity distribution.',
     endpoint: 'https://bill.pitc.com.pk/lescobill/general?refno=',
     colorClass: {
-      from: 'from-green-500',
-      to: 'to-green-700',
-      button: 'bg-green-600',
-      buttonHover: 'hover:bg-green-700',
-      icon: 'text-green-600'
+      from: 'from-blue-500',
+      to: 'to-blue-700',
+      button: 'bg-blue-600',
+      buttonHover: 'hover:bg-blue-700',
+      icon: 'text-blue-600'
     },
     region: 'Lahore Division'
   },
@@ -52,11 +52,11 @@ export const companies: Company[] = [
     description: 'Serving the southern Punjab region with efficient power distribution.',
     endpoint: 'https://bill.pitc.com.pk/mepcobill/general?refno=',
     colorClass: {
-       from: 'from-red-600',
-      to: 'to-red-700',
-      button: 'bg-red-600',
-      buttonHover: 'hover:bg-red-700',
-      icon: 'text-red-600'
+       from: 'from-pink-600',
+      to: 'to-pink-700',
+      button: 'bg-pink-600',
+      buttonHover: 'hover:bg-pink-700',
+      icon: 'text-pink-600'
     },
     region: 'Multan Division'
   },
@@ -82,11 +82,11 @@ export const companies: Company[] = [
     description: 'Delivering electricity to the Khyber Pakhtunkhwa region.',
     endpoint: 'https://bill.pitc.com.pk/pescobill/general?refno=',
     colorClass: {
-      from: 'from-amber-600',
-      to: 'to-amber-700',
-      button: 'bg-amber-600',
-      buttonHover: 'hover:bg-amber-700',
-      icon: 'text-amber-600'
+      from: 'from-emerald-600',
+      to: 'to-emerald-700',
+      button: 'bg-emerald-600',
+      buttonHover: 'hover:bg-emerald-700',
+      icon: 'text-emerald-600'
     },
     region: 'Peshawar Division'
   },
@@ -142,11 +142,11 @@ export const companies: Company[] = [
     description: 'Powering Islamabad with reliable electricity distribution.',
     endpoint: 'https://bill.pitc.com.pk/iescobill/general?refno=',
     colorClass: {
-      from: 'from-indigo-600',
-      to: 'to-indigo-700',
-      button: 'bg-indigo-600',
-      buttonHover: 'hover:bg-indigo-700',
-      icon: 'text-indigo-600'
+      from: 'from-red-600',
+      to: 'to-red-700',
+      button: 'bg-red-600',
+      buttonHover: 'hover:bg-red-700',
+      icon: 'text-red-600'
     },
     region: 'Islamabad Division'
   },
