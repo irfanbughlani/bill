@@ -149,5 +149,5 @@ export const companies: Company[] = [
       icon: 'text-indigo-600'
     },
     region: 'Islamabad Division'
-  }
+  },
 ];
