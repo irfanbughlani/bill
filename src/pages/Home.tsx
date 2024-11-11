@@ -60,7 +60,7 @@ const Home = () => {
               <h3 className="text-2xl font-bold text-gray-900 mb-2">{company.name} Bill</h3>
               <p className="text-sm text-gray-600 mb-3">{company.fullName}</p>
               <div className="mt-4 text-sm font-medium text-gray-500">{company.region}</div>
-              <button className={`mt-4 w-full px-5 py-2 ${company.colorClass.button} text-white rounded-lg ${company.colorClass.buttonHover} transition-colors`}>
+              <button className={`mt-3 w-full px-5 py-2 ${company.colorClass.button} text-white rounded-lg ${company.colorClass.buttonHover} transition-colors`}>
                 Check Bill Now
               </button>
             </div>
