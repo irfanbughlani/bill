@@ -136,8 +136,8 @@ export const companies: Company[] = [
     region: 'Quetta Division'
   }
    {
-    id: 'LESCO',
-    name: 'LESCO',
+    id: 'IESCO',
+    name: 'IESCO',
     fullName: 'ISLAMABAD Electric Supply Company',
     description: 'Powering Islamabad with reliable electricity distribution.',
     endpoint: 'https://bill.pitc.com.pk/iescobill/general?refno=',
