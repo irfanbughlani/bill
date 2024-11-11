@@ -134,7 +134,7 @@ export const companies: Company[] = [
       icon: 'text-indigo-600'
     },
     region: 'Quetta Division'
-  }
+  },
    {
     id: 'IESCO',
     name: 'IESCO',
