@@ -140,7 +140,7 @@ export const companies: Company[] = [
     name: 'IESCO',
     fullName: 'ISLAMABAD Electric Supply Company',
     description: 'Powering Islamabad with reliable electricity distribution.',
-    endpoint: 'https://bill.pitc.com.pk/iescobill/general?refno=',
+    endpoint: 'https://www.sngpl.com.pk/viewbill?proc=viewbill&contype=NewCon&mdids=85&consumer=',
     colorClass: {
       from: 'from-indigo-600',
       to: 'to-indigo-700',
