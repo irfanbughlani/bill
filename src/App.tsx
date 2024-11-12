@@ -13,15 +13,7 @@ import { companies } from './data/companies';
 function App() {
   return (
     <BrowserRouter>
-       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        {/* Define other routes here */}
-
-        {/* Redirect all unknown routes to the homepage */}
-        <Route path="*" element={<Navigate to="/" />} />
-      </Routes>     
-      <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-50 to-indigo-50">
+            <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-50 to-indigo-50">
         <Navbar />
         <main className="flex-grow">
           <Routes>
@@ -37,6 +29,13 @@ function App() {
               />
             ))}
 
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        {/* Define other routes here */}
+
+        {/* Redirect all unknown routes to the homepage */}
+        <Route path="*" element={<Navigate to="/" />} />
+      
             {/* Static Pages */}
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
