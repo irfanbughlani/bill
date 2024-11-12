@@ -11,6 +11,3 @@
 
 [[plugins]]
   package = "netlify-plugin-image-optim"
-
-[[plugins]]
-  package = "netlify-plugin-cloudflare-cache-purge"
