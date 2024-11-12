@@ -11,14 +11,8 @@ import Disclaimer from './pages/Disclaimer';
 import { companies } from './data/companies';
 import ScrollToTop from './components/ScrollToTop';
 
-function App() {
-  return (
-    <>
-      <ScrollToTop />
-      {/* Your other components */}
-    </>
-  );
-}
+
+  
 
 export default App;
 
@@ -45,6 +39,12 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/disclaimer" element={<Disclaimer />} />
+              <>
+      <ScrollToTop />
+      {/* Your other components */}
+    </>
+  );
+}
           </Routes>
         </main>
         <Footer />
