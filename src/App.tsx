@@ -9,6 +9,18 @@ import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Disclaimer from './pages/Disclaimer';
 import { companies } from './data/companies';
+import ScrollToTop from './components/ScrollToTop';
+
+function App() {
+  return (
+    <>
+      <ScrollToTop />
+      {/* Your other components */}
+    </>
+  );
+}
+
+export default App;
 
 function App() {
   return (
