@@ -1,6 +1,12 @@
 [[redirects]]
+  from = "/sitemap.xml"
+  to = "/sitemap.xml"
+  status = 200
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
 [[plugins]]
-package = "netlify-plugin-sitemap"
+  package = "netlify-plugin-sitemap"
