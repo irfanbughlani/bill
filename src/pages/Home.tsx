@@ -43,109 +43,62 @@ const Home = () => {
         ))}
       </div>
 
-    {/* Companies Grid */}
-<h2 id="companies" className="text-3xl font-bold text-gray-900 mb-8 text-center">Select Your Electricity Provider</h2>
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-16">
-  {companies.slice(0, 10).map((company) => (
-    <Link
-      key={company.id}
-      to={`/${company.id.toLowerCase()}`}
-      className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-1"
-    >
-      <div className="p-6">
-        <div className="flex items-center justify-between mb-4">
-          <Zap className={`h-10 w-10 ${company.colorClass.icon}`} />
-          <ArrowRight className="h-6 w-6 text-gray-400 group-hover:text-gray-600 transition-colors" />
-        </div>
-        <h3 className="text-2xl font-bold text-gray-900 mb-2">{company.name} Bill</h3>
-        <p className="text-sm text-gray-600 mb-3">{company.fullName}</p>
-        <div className="mt-4 text-sm font-medium text-gray-500">{company.region}</div>
-        <button className={`mt-4 w-full px-4 py-2 ${company.colorClass.button} text-white rounded-lg ${company.colorClass.buttonHover} transition-colors`}>
-          Check Bill Now
-        </button>
-      </div>
-      <div className={`h-1.5 ${company.colorClass.button}`}></div>
-    </Link>
-  ))}
-</div>
-
-
-      {/* Info Sections */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-        <div className="bg-white rounded-xl shadow-lg p-8">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6">
-            Why Check Your Bill Online?
-          </h3>
-          <ul className="space-y-4">
-            {[
-              'Instant access to your bill details',
-              'No need to visit physical offices',
-              'View current and previous billing history',
-              'Download and print bills anytime',
-              'Save time and effort',
-              'Track your consumption patterns',
-              'Get payment deadline reminders',
-              'Access from any device'
-            ].map((item, index) => (
-              <li key={index} className="flex items-center space-x-3">
-                <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-blue-600"></div>
-                <span className="text-gray-600">{item}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="bg-white rounded-xl shadow-lg p-8">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6">
-            Available Services
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {[
-              { title: 'Bill Verification', desc: 'Verify your current bill amount' },
-              { title: 'Due Date Tracking', desc: 'Never miss a payment deadline' },
-              { title: 'Usage Analysis', desc: 'Monitor your power consumption' },
-              { title: 'Payment History', desc: 'Access your payment records' },
-              { title: 'Digital Downloads', desc: 'Save bills in digital format' },
-              { title: 'Multi-device Access', desc: 'Check bills from any device' }
-            ].map((service, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg p-4">
-                <h4 className="font-semibold text-gray-900 mb-1">{service.title}</h4>
-                <p className="text-sm text-gray-600">{service.desc}</p>
+      {/* Companies Grid */}
+      <h2 id="companies" className="text-3xl font-bold text-gray-900 mb-8 text-center">Select Your Electricity Provider</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-16">
+        {companies.slice(0, 10).map((company) => (
+          <Link
+            key={company.id}
+            to={`/${company.id.toLowerCase()}`}
+            className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-1"
+          >
+            <div className="p-6">
+              <div className="flex items-center justify-between mb-4">
+                <Zap className={`h-10 w-10 ${company.colorClass.icon}`} />
+                <ArrowRight className="h-6 w-6 text-gray-400 group-hover:text-gray-600 transition-colors" />
               </div>
-
-              <section className="bg-white rounded-lg shadow-md p-6 my-6">
-  <h2 className="text-2xl font-semibold text-blue-600 mb-4">Our Services for Quick Online Bill Checks</h2>
-  <p className="text-lg">
-    At bill.com.pk, we make it easy to check and manage your bills online. Whether you need a{' '}
-    <span className="font-semibold">KE duplicate bill</span>, access to your <span className="font-semibold">
-    electricity bill online</span>, or are looking to view your <span className="font-semibold">WAPDA bill</span>,
-    our platform provides a quick, user-friendly way to stay up-to-date.
-  </p>
-</section>
-
-<section className="bg-white rounded-lg shadow-md p-6 my-6">
-  <h2 className="text-2xl font-semibold text-blue-600 mb-4">Easy Bill Check for All Your Utility Needs</h2>
-  <p className="text-lg">
-    With bill.com.pk, you can instantly access various utility bills like <span className="font-semibold">
-    bijli ka bill online check</span>, <span className="font-semibold">WASA duplicate bill</span>, and{' '}
-    <span className="font-semibold">PTCL duplicate bill</span>. Our comprehensive online platform ensures you have
-    all your essential billing information in one place.
-  </p>
-</section>
-
-<section className="bg-white rounded-lg shadow-md p-6 my-6">
-  <h2 className="text-2xl font-semibold text-blue-600 mb-4">Why Use bill.com.pk?</h2>
-  <p className="text-lg">
-    bill.com.pk is designed to save you time. We offer reliable and fast access to your bills, including <span className="font-semibold">
-    k electric bill</span>, <span className="font-semibold">wapda online bill check</span>, and <span className="font-semibold">
-    ke bill check online</span>. No more waiting in lines; view and manage your bills right from home.
-  </p>
-</section>
-
-            ))}
-          </div>
-        </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">{company.name} Bill</h3>
+              <p className="text-sm text-gray-600 mb-3">{company.fullName}</p>
+              <div className="mt-4 text-sm font-medium text-gray-500">{company.region}</div>
+              <button className={`mt-4 w-full px-4 py-2 ${company.colorClass.button} text-white rounded-lg ${company.colorClass.buttonHover} transition-colors`}>
+                Check Bill Now
+              </button>
+            </div>
+            <div className={`h-1.5 ${company.colorClass.button}`}></div>
+          </Link>
+        ))}
       </div>
+
+      {/* Additional Content Sections */}
+      <section className="bg-white rounded-lg shadow-md p-6 my-6">
+        <h2 className="text-2xl font-semibold text-blue-600 mb-4">Our Services for Quick Online Bill Checks</h2>
+        <p className="text-lg">
+          At bill.com.pk, we make it easy to check and manage your bills online. Whether you need a{' '}
+          <span className="font-semibold">KE duplicate bill</span>, access to your <span className="font-semibold">
+          electricity bill online</span>, or are looking to view your <span className="font-semibold">WAPDA bill</span>,
+          our platform provides a quick, user-friendly way to stay up-to-date.
+        </p>
+      </section>
+
+      <section className="bg-white rounded-lg shadow-md p-6 my-6">
+        <h2 className="text-2xl font-semibold text-blue-600 mb-4">Easy Bill Check for All Your Utility Needs</h2>
+        <p className="text-lg">
+          With bill.com.pk, you can instantly access various utility bills like <span className="font-semibold">
+          bijli ka bill online check</span>, <span className="font-semibold">WASA duplicate bill</span>, and{' '}
+          <span className="font-semibold">PTCL duplicate bill</span>. Our comprehensive online platform ensures you have
+          all your essential billing information in one place.
+        </p>
+      </section>
+
+      <section className="bg-white rounded-lg shadow-md p-6 my-6">
+        <h2 className="text-2xl font-semibold text-blue-600 mb-4">Why Use bill.com.pk?</h2>
+        <p className="text-lg">
+          bill.com.pk is designed to save you time. We offer reliable and fast access to your bills, including <span className="font-semibold">
+          k electric bill</span>, <span className="font-semibold">wapda online bill check</span>, and <span className="font-semibold">
+          ke bill check online</span>. No more waiting in lines; view and manage your bills right from home.
+        </p>
+      </section>
+
     </div>
   );
 };
