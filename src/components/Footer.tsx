@@ -20,18 +20,18 @@ const Footer: React.FC = () => {
           Easily check Online Mepco bill, Lesco bill, Fesco bill, Iesco bill, Pesco bill, GEPCO bill, KE duplicate bill, Online bill check
         </div>
         
-        {/* Footer Links */}
-        <div className="mt-8 flex justify-center space-x-4 text-gray-600">
-          <Link to="/about" className="hover:underline">
+        {/* Footer Links with Button Shapes */}
+        <div className="mt-8 flex flex-wrap justify-center gap-4">
+          <Link to="/about" className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">
             About Us
           </Link>
-          <Link to="/contact" className="hover:underline">
+          <Link to="/contact" className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">
             Contact Us
           </Link>
-          <Link to="/privacy-policy" className="hover:underline">
+          <Link to="/privacy-policy" className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">
             Privacy Policy
           </Link>
-          <Link to="/disclaimer" className="hover:underline">
+          <Link to="/disclaimer" className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">
             Disclaimer
           </Link>
         </div>
@@ -41,4 +41,3 @@ const Footer: React.FC = () => {
 };
 
 export default Footer;
-
