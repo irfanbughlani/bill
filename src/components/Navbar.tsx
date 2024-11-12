@@ -20,19 +20,19 @@ const Navbar = () => {
               to="/"
               className="px-4 py-2 rounded-lg text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 transition-colors"
             >
-              Home
+            Home
             </Link>
             <a
               href="#companies"
               className="px-4 py-2 rounded-lg text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 transition-colors"
             >
-              Lesco bill
+              Companies
             </a>
             <a
-              href="#companies"
-              className="px-4 py-2 rounded-lg text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 transition-colors"
+              href="#features"
+              className="px-4 py-2 rounded-lg text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 transition-colors"
             >
-              Mepco Bill
+              Features
             </a>
           </div>
         </div>
