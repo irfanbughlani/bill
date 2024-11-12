@@ -27,15 +27,7 @@ function App() {
                 path={`/${company.id.toLowerCase()}`}
                 element={<CompanyPage company={company} />}
               />
-            ))}
-
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        {/* Define other routes here */}
-
-        {/* Redirect all unknown routes to the homepage */}
-        <Route path="*" element={<Navigate to="/" />} />
-      
+            ))}        
             {/* Static Pages */}
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
