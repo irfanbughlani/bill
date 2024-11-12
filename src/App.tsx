@@ -9,13 +9,7 @@ import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Disclaimer from './pages/Disclaimer';
 import { companies } from './data/companies';
-import ScrollToTop from './components/ScrollToTop';
-
-
-  
-
 export default App;
-
 function App() {
   return (
     <BrowserRouter>
@@ -39,11 +33,6 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/disclaimer" element={<Disclaimer />} />
-              <>
-      <ScrollToTop />
-      {/* Your other components */}
-    </>
-
           </Routes>
         </main>
         <Footer />
