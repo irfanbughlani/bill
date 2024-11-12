@@ -43,8 +43,7 @@ function App() {
       <ScrollToTop />
       {/* Your other components */}
     </>
-  );
-}
+
           </Routes>
         </main>
         <Footer />
