@@ -26,7 +26,7 @@ const CompanyPage: React.FC<CompanyPageProps> = ({ company }) => {
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      {/* SEO: Set unique title and description */}
+      {/* SEO: Set unique title, description, and canonical URL */}
       {company && (
         <Helmet>
           <title>{`${company.name} Bill Check Online`}</title>
@@ -34,7 +34,7 @@ const CompanyPage: React.FC<CompanyPageProps> = ({ company }) => {
             name="description"
             content={`Check your (${company.region}) ${company.fullName} online. View payment status, verify due dates, and access billing details.`}
           />
-         <link rel="canonical" href={window.location.href} />
+          <link rel="canonical" href={`${window.location.origin}/${company.id.toLowerCase()}`} />
         </Helmet>
       )}
 
@@ -49,7 +49,7 @@ const CompanyPage: React.FC<CompanyPageProps> = ({ company }) => {
               </div>
               <h1 className="text-4xl sm:text-5xl font-bold text-center mb-4">
                 {company.name} Bill Check Online
-                 </h1>
+              </h1>
               <p className="text-xl text-center max-w-3xl mx-auto opacity-90">
                 {company.description}
               </p>
