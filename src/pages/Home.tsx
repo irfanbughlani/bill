@@ -11,11 +11,9 @@ function Home() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* Set SEO title and description */}
       <Helmet>
-        <title>Online Bill Check | BILL.COM.PK</title>
-        <meta
-          name="description"
-          content="Quick and easy access to your electricity bill online details from all major providers across Pakistan. View and manage your bills from LESCO, MEPCO, GEPCO, and more."
-        />
+        <title>Online Bill Check | Duplicate Bill</title>
+        <meta name="description" content="Quick and easy access to your electricity bill online details from all major providers across Pakistan. View and manage your bills from LESCO, MEPCO, GEPCO, and more."/>
+        <link rel="canonical" href="https://bill.com.pk/" />
       </Helmet>
 
       {/* Hero Section */}
