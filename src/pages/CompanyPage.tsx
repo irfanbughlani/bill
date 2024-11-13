@@ -34,7 +34,7 @@ const CompanyPage: React.FC<CompanyPageProps> = ({ company }) => {
             name="description"
             content={`Check your (${company.region}) ${company.fullName} online. View payment status, verify due dates, and access billing details.`}
           />
-           <link rel="canonical" href={window.location.href} />
+         
         </Helmet>
       )}
 
