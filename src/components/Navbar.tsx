@@ -12,7 +12,7 @@ const Navbar = () => {
               <div className="bg-blue-600 p-2 rounded-lg group-hover:bg-blue-700 transition-colors">
                 <Zap className="h-6 w-6 text-white" />
               </div>
-              <span className="text-xl font-bold text-gray-900">Bill Check Online</span>
+              <span className="text-xl font-bold text-gray-900">Onlien Bill Check</span>
             </Link>
           </div>
           <div className="hidden sm:flex sm:items-center sm:space-x-4">

@@ -1,4 +1,5 @@
 import React from 'react';
+import { HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -9,35 +10,42 @@ import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Disclaimer from './pages/Disclaimer';
 import { companies } from './data/companies';
+import ScrollToTop from './components/ScrollToTop'; // Import ScrollToTop here
+HEAD
 export default App;
+
 function App() {
   return (
-    <BrowserRouter>
-            <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-50 to-indigo-50">
-        <Navbar />
-        <main className="flex-grow">
-          <Routes>
-            {/* Home Page */}
-            <Route path="/" element={<Home />} />
+    <HelmetProvider>  {/* Wrap the entire app in HelmetProvider */}
+      <BrowserRouter>
+        <ScrollToTop /> {/* Add ScrollToTop here */}
+        <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-50 to-indigo-50">
+          <Navbar />
+          <main className="flex-grow">
+            <Routes>
+              {/* Home Page */}
+              <Route path="/" element={<Home />} />
 
-            {/* Dynamic Company Pages */}
-            {companies.map((company) => (
-              <Route
-                key={company.id}
-                path={`/${company.id.toLowerCase()}`}
-                element={<CompanyPage company={company} />}
-              />
-            ))}        
-            {/* Static Pages */}
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/disclaimer" element={<Disclaimer />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </BrowserRouter>
+              {/* Dynamic Company Pages */}
+              {companies.map((company) => (
+                <Route
+                  key={company.id}
+                  path={`/${company.id.toLowerCase()}`}
+                  element={<CompanyPage company={company} />}
+                />
+              ))}        
+              
+              {/* Static Pages */}
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/disclaimer" element={<Disclaimer />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
+      </BrowserRouter>
+    </HelmetProvider>
   );
 }
 

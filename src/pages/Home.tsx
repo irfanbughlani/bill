@@ -1,11 +1,23 @@
+// pages/Home.tsx
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Zap, ArrowRight, Clock, Download, History, CreditCard } from 'lucide-react';
 import { companies } from '../data/companies';
+import FAQSection from '../components/FAQSection';
 
-const Home = () => {
+function Home() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      {/* Set SEO title and description */}
+      <Helmet>
+        <title>Online Bill Check | BILL.COM.PK</title>
+        <meta
+          name="description"
+          content="Quick and easy access to your electricity bill online details from all major providers across Pakistan. View and manage your bills from LESCO, MEPCO, GEPCO, and more."
+        />
+      </Helmet>
+
       {/* Hero Section */}
       <div className="relative overflow-hidden bg-white rounded-3xl shadow-2xl mb-16 p-8 sm:p-12">
         <div className="relative z-10">
@@ -43,32 +55,31 @@ const Home = () => {
         ))}
       </div>
 
-    {/* Companies Grid */}
-<h2 id="companies" className="text-3xl font-bold text-gray-900 mb-8 text-center">Select Your Electricity Provider</h2>
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-16">
-  {companies.slice(0, 10).map((company) => (
-    <Link
-      key={company.id}
-      to={/${company.id.toLowerCase()}}
-      className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-1"
-    >
-      <div className="p-6">
-        <div className="flex items-center justify-between mb-4">
-          <Zap className={h-10 w-10 ${company.colorClass.icon}} />
-          <ArrowRight className="h-6 w-6 text-gray-400 group-hover:text-gray-600 transition-colors" />
-        </div>
-        <h3 className="text-2xl font-bold text-gray-900 mb-2">{company.name} Bill</h3>
-        <p className="text-sm text-gray-600 mb-3">{company.fullName}</p>
-        <div className="mt-4 text-sm font-medium text-gray-500">{company.region}</div>
-        <button className={mt-4 w-full px-4 py-2 ${company.colorClass.button} text-white rounded-lg ${company.colorClass.buttonHover} transition-colors}>
-          Check Bill Now
-        </button>
+      {/* Companies Grid */}
+      <h2 id="companies" className="text-3xl font-bold text-gray-900 mb-8 text-center">Select Your Electricity Provider</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-16">
+        {companies.slice(0, 10).map((company) => (
+          <Link
+            key={company.id}
+            to={`/${company.id.toLowerCase()}`}
+            className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-1"
+          >
+            <div className="p-6">
+              <div className="flex items-center justify-between mb-4">
+                <Zap className={`h-10 w-10 ${company.colorClass.icon}`} />
+                <ArrowRight className="h-6 w-6 text-gray-400 group-hover:text-gray-600 transition-colors" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">{company.name} Bill</h3>
+              <p className="text-sm text-gray-600 mb-3">{company.fullName}</p>
+              <div className="mt-4 text-sm font-medium text-gray-500">{company.region}</div>
+              <button className={`mt-4 w-full px-4 py-2 ${company.colorClass.button} text-white rounded-lg ${company.colorClass.buttonHover} transition-colors`}>
+                Check Bill Now
+              </button>
+            </div>
+            <div className={`h-1.5 ${company.colorClass.button}`}></div>
+          </Link>
+        ))}
       </div>
-      <div className={h-1.5 ${company.colorClass.button}}></div>
-    </Link>
-  ))}
-</div>
-
 
       {/* Info Sections */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
@@ -116,7 +127,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-           {/* Additional Content Sections */}
+
+      {/* Additional Content Sections */}
       <section className="bg-white rounded-lg shadow-md p-6 my-6">
         <h2 className="text-2xl font-semibold text-blue-600 mb-4">Our Services for Quick Online Bill Checks</h2>
         <p className="text-lg">
@@ -145,8 +157,11 @@ const Home = () => {
           ke bill check online</span>. No more waiting in lines; view and manage your bills right from home.
         </p>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSection />
     </div>
   );
-};
+}
 
 export default Home;
