@@ -1,5 +1,11 @@
 [[redirects]]
-  from = "/sitemap.xml"
-  to = "/sitemap.xml"
+  from = "/*"
+  to = "/index.html"
   status = 200
   force = false
+
+[[redirects]]
+  from = "/404"
+  to = "/404.html"
+  status = 404
+  force = true
