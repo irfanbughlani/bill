@@ -1,7 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /disclaimer
-Disallow: /about
-Disallow: /contact
-Disallow: /privacy-policy
-Sitemap: https://bill.com.pk/sitemap.xml
