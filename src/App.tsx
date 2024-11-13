@@ -9,7 +9,6 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Disclaimer from './pages/Disclaimer';
-import robots.txt from './pages/robots.txt';
 import { companies } from './data/companies';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -35,7 +34,6 @@ function App() {
               ))}
 
               {/* Static Pages */}
-               <Route path="/robots.txt" element={<robots.txt />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
