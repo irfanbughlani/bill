@@ -1,7 +1,15 @@
-// components/ProviderContent.tsx
 import React from 'react';
 
-const ProviderContent = ({ company }) => {
+interface ProviderContentProps {
+  company: {
+    name: string;
+    colorClass: {
+      icon: string;
+    };
+  };
+}
+
+const ProviderContent: React.FC<ProviderContentProps> = ({ company }) => {
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className={`text-3xl font-bold ${company.colorClass.icon} mb-4`}>
@@ -12,6 +20,7 @@ const ProviderContent = ({ company }) => {
         simple and convenient for you to access, view, and download your latest bill without any hassle.
       </p>
       
+      {/* How to Check Bill Section */}
       <section className="bg-white rounded-lg shadow-lg p-6 mb-6">
         <h2 className={`text-2xl font-semibold ${company.colorClass.icon} mb-4`}>How to Check Your {company.name} Bill</h2>
         <p className="text-gray-700 mb-4">
@@ -24,6 +33,7 @@ const ProviderContent = ({ company }) => {
         </p>
       </section>
       
+      {/* Why Choose Online Bill Checking */}
       <section className="bg-white rounded-lg shadow-lg p-6 mb-6">
         <h2 className={`text-2xl font-semibold ${company.colorClass.icon} mb-4`}>Why Choose Online Bill Checking for {company.name}</h2>
         <ul className="list-disc list-inside text-gray-700 space-y-2">
@@ -35,6 +45,7 @@ const ProviderContent = ({ company }) => {
         </ul>
       </section>
       
+      {/* Understanding Your Bill */}
       <section className="bg-white rounded-lg shadow-lg p-6 mb-6">
         <h2 className={`text-2xl font-semibold ${company.colorClass.icon} mb-4`}>Understanding Your {company.name} Bill</h2>
         <p className="text-gray-700 mb-4">
@@ -52,6 +63,7 @@ const ProviderContent = ({ company }) => {
         </p>
       </section>
       
+      {/* Payment Options */}
       <section className="bg-white rounded-lg shadow-lg p-6 mb-6">
         <h2 className={`text-2xl font-semibold ${company.colorClass.icon} mb-4`}>Payment Options for {company.name}</h2>
         <p className="text-gray-700 mb-4">
@@ -66,6 +78,7 @@ const ProviderContent = ({ company }) => {
         </ul>
       </section>
 
+      {/* Saving Tips */}
       <section className="bg-white rounded-lg shadow-lg p-6 mb-6">
         <h2 className={`text-2xl font-semibold ${company.colorClass.icon} mb-4`}>Saving on Your {company.name} Bill</h2>
         <p className="text-gray-700 mb-4">

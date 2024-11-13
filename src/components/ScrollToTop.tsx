@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-// ScrollToTop.tsx
+
 const ScrollToTop: React.FC = () => {
   const { pathname } = useLocation();
 

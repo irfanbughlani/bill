@@ -10,15 +10,13 @@ import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Disclaimer from './pages/Disclaimer';
 import { companies } from './data/companies';
-import ScrollToTop from './components/ScrollToTop'; // Import ScrollToTop here
-HEAD
-export default App;
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
-    <HelmetProvider>  {/* Wrap the entire app in HelmetProvider */}
+    <HelmetProvider>
       <BrowserRouter>
-        <ScrollToTop /> {/* Add ScrollToTop here */}
+        <ScrollToTop />
         <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-50 to-indigo-50">
           <Navbar />
           <main className="flex-grow">
@@ -33,8 +31,8 @@ function App() {
                   path={`/${company.id.toLowerCase()}`}
                   element={<CompanyPage company={company} />}
                 />
-              ))}        
-              
+              ))}
+
               {/* Static Pages */}
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
@@ -49,4 +47,5 @@ function App() {
   );
 }
 
+// Ensure there is only one default export
 export default App;
