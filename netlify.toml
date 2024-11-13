@@ -6,6 +6,6 @@
 
 [[redirects]]
   from = "/404"
-  to = "/404.html"
+  to = "/"
   status = 404
   force = true
