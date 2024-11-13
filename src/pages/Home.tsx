@@ -12,7 +12,7 @@ function Home() {
       {/* Set SEO title and description */}
       <Helmet>
         <title>Online Bill Check | Duplicate Bill</title>
-        <meta name="description" content="Quick and easy access to your electricity bill online details from all major providers across Pakistan. View and manage your bills from LESCO, MEPCO, GEPCO, and more."/>
+        <meta name="description" content="Check your electricity bills online from LESCO, FESCO, MEPCO, HESCO, PESCO, GEPCO, SEPCO, IESCO, TESCO and QESCO, Quick and easy access to bill details."/>
         <link rel="canonical" href="https://bill.com.pk/" />
       </Helmet>
 
