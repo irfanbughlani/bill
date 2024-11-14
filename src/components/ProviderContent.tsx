@@ -13,7 +13,7 @@ const ProviderContent: React.FC<ProviderContentProps> = ({ company }) => {
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className={`text-3xl font-bold ${company.colorClass.icon} mb-4`}>
-        {company.name} Bill Online: Quick and Easy Access
+        {company.name} Online Bill: Quick and Easy Access
       </h1>
       <p className="text-lg text-gray-700 mb-6">
         Welcome to your one-stop destination for checking your {company.name} bill online. Here at <a href="https://bill.com.pk" className="text-blue-600 underline">bill.com.pk</a>, we make it
@@ -22,13 +22,13 @@ const ProviderContent: React.FC<ProviderContentProps> = ({ company }) => {
       
       {/* How to Check Bill Section */}
       <section className="bg-white rounded-lg shadow-lg p-6 mb-6">
-        <h2 className={`text-2xl font-semibold ${company.colorClass.icon} mb-4`}>How to Check Your {company.name} Bill</h2>
+        <h2 className={`text-2xl font-semibold ${company.colorClass.icon} mb-4`}>How to Check {company.name} Bill Online</h2>
         <p className="text-gray-700 mb-4">
-          Checking your {company.name} bill is quick and easy. Simply enter your account details on our website, and you’ll have immediate
-          access to your latest bill. You can view and download your bill with just a few clicks, helping you keep track of payments and avoid late fees.
+          Your {company.name} Bill Online Check is quick and easy. Simply enter your account details on our website, and you’ll have immediate
+          access to your {company.name} latest bill. You can view and download your Duplicate bill online with just a few clicks, helping you keep track of payments and avoid late fees.
         </p>
         <p className="text-gray-700">
-          With our user-friendly interface, finding your {company.name} bill has never been simpler. Whether you're at home or on the go, you
+          With our user-friendly interface, finding your {company.name} bill has never been easy. Whether you're at home or on the go, you
           can access your bill online anytime, making it easy to manage your payments.
         </p>
       </section>
@@ -37,7 +37,7 @@ const ProviderContent: React.FC<ProviderContentProps> = ({ company }) => {
       <section className="bg-white rounded-lg shadow-lg p-6 mb-6">
         <h2 className={`text-2xl font-semibold ${company.colorClass.icon} mb-4`}>Why Choose Online Bill Checking for {company.name}</h2>
         <ul className="list-disc list-inside text-gray-700 space-y-2">
-          <li>24/7 access to your {company.name} bill from anywhere.</li>
+          <li>24/7 access to your Online {company.name} bill from anywhere.</li>
           <li>Convenient online bill download and print options for record-keeping.</li>
           <li>No need to visit physical offices or wait in long queues.</li>
           <li>Organize and keep track of your billing history electronically.</li>
@@ -49,7 +49,7 @@ const ProviderContent: React.FC<ProviderContentProps> = ({ company }) => {
       <section className="bg-white rounded-lg shadow-lg p-6 mb-6">
         <h2 className={`text-2xl font-semibold ${company.colorClass.icon} mb-4`}>Understanding Your {company.name} Bill</h2>
         <p className="text-gray-700 mb-4">
-          Your {company.name} bill provides a breakdown of your electricity consumption, charges, and due date for payments. Here’s what each section means:
+          Your {company.name} duplicate bill provides a breakdown of your electricity consumption, charges, and due date for payments. Here’s what each section means:
         </p>
         <ul className="list-disc list-inside text-gray-700 space-y-2">
           <li><strong>Billing Period:</strong> The duration of time covered by this bill.</li>

@@ -107,12 +107,15 @@ const CompanyPage: React.FC<CompanyPageProps> = ({ company }) => {
               </h3>
               <ul className="space-y-4">
                 {[
-                  "Look at your previous electricity bill",
+                  `Look at your previous ${company.name} electricity bill`,
                   "Find the reference number printed at the top",
+                  `${company.name} online bill check by customer id`,
                   "It's a unique identifier for your connection",
-                  "Enter the number exactly as shown",
+                  `Enter the number exactly as shown on your ${company.name} Bill`,
                   "Double-check for accuracy",
-                  "Include all digits and special characters"
+                  "Include all 14 Number digits without dash (-) and space",
+                  `After entering Reference number press Check ${company.name} Bill button`,
+                  "Now you can Electricity bill online check"
                 ].map((item, index) => (
                   <li key={index} className="flex items-start space-x-3">
                     <div className={`flex-shrink-0 w-6 h-6 rounded-full bg-${company.colorClass.icon.split('-')[1]}-100 flex items-center justify-center mt-1`}>
@@ -126,11 +129,11 @@ const CompanyPage: React.FC<CompanyPageProps> = ({ company }) => {
 
             <div className="bg-white rounded-xl shadow-lg p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                About {company.fullName}
+                About {company.fullName} ({company.name})
               </h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
                 {company.fullName} ({company.name}) is the primary electricity provider for the {company.region}. 
-                Our online bill checking service allows you to easily access your electricity bill details, 
+                Our online {company.name} bill checking service allows you to easily access your Duplicate electricity bill details, 
                 verify due dates, and check payment status from the comfort of your home.
               </p>
               <div className="grid grid-cols-2 gap-4">
