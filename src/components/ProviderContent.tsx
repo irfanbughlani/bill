@@ -16,7 +16,7 @@ const ProviderContent: React.FC<ProviderContentProps> = ({ company }) => {
         {company.name} Bill Online: Quick and Easy Access
       </h1>
       <p className="text-lg text-gray-700 mb-6">
-        Welcome to your one-stop destination for checking your {company.name} bill online. Here at bill.com.pk, we make it
+        Welcome to your one-stop destination for checking your {company.name} bill online. Here at <a href="https://bill.com.pk" className="text-blue-600 underline">bill.com.pk</a>, we make it
         simple and convenient for you to access, view, and download your latest bill without any hassle.
       </p>
       
