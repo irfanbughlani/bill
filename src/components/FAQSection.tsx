@@ -27,7 +27,7 @@ function FAQSection({ company }) {
     },
     {
       question: 'What providers are supported?',
-      answer: 'We support major electricity providers across Pakistan, including LESCO, K-Electric, WAPDA, HESCO, and SEPCO, among others. Select your provider from the list to view your bill details.',
+      answer: 'We support major electricity providers across Pakistan, including online bill check, LESCO bill, FESCO bill, MEPCO bill, HESCO bill, PESCO bill, GEPCO bill, SEPCO bill, QESCO bill, IESCO bill, TESCO bill among others. Select your provider from the list to view your bill details.',
     },
   ];
 
