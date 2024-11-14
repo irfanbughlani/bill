@@ -130,8 +130,8 @@ function Home() {
         <h2 className="text-2xl font-semibold text-blue-600 mb-4">Our Services for Quick Online Bill Checks</h2>
         <p className="text-lg">
           At bill.com.pk, we make it easy to check and manage your bills online. Whether you need a{' '}
-          <span className="font-semibold">KE duplicate bill</span>, access to your <span className="font-semibold">
-          electricity bill online</span>, or are looking to view your <span className="font-semibold">WAPDA bill</span>,
+          <span className="font-semibold">Mepco duplicate bill</span>, access to your <span className="font-semibold">
+          electricity bill online check 2024</span>, or are looking to view your <span className="font-semibold">Lesco online bill check</span>,
           our platform provides a quick, user-friendly way to stay up-to-date.
         </p>
       </section>
@@ -139,9 +139,9 @@ function Home() {
       <section className="bg-white rounded-lg shadow-md p-6 my-6">
         <h2 className="text-2xl font-semibold text-blue-600 mb-4">Easy Bill Check for All Your Utility Needs</h2>
         <p className="text-lg">
-          With bill.com.pk, you can instantly access various utility bills like <span className="font-semibold">
-          bijli ka bill online check</span>, <span className="font-semibold">WASA duplicate bill</span>, and{' '}
-          <span className="font-semibold">PTCL duplicate bill</span>. Our comprehensive online platform ensures you have
+          With bill.com.pk, you can instantly access various Electricity bills like <span className="font-semibold">
+          bijli ka bill online check</span>, <span className="font-semibold">iesco online bill</span>, and{' '}
+          <span className="font-semibold">Gepco duplicate bill</span>. Our comprehensive online platform ensures you have
           all your essential billing information in one place.
         </p>
       </section>
@@ -150,8 +150,8 @@ function Home() {
         <h2 className="text-2xl font-semibold text-blue-600 mb-4">Why Use bill.com.pk?</h2>
         <p className="text-lg">
           bill.com.pk is designed to save you time. We offer reliable and fast access to your bills, including <span className="font-semibold">
-          k electric bill</span>, <span className="font-semibold">wapda online bill check</span>, and <span className="font-semibold">
-          ke bill check online</span>. No more waiting in lines; view and manage your bills right from home.
+          k electric bill</span>, <span className="font-semibold">Lesco online bill check</span>, and <span className="font-semibold">
+          Mepco bill check online</span>. No more waiting in lines; view and manage your bills right from home.
         </p>
       </section>
 
