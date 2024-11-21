@@ -8,9 +8,11 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "generate-sitemap": "node generate-sitemap.tsx"
+    "generate-sitemap": "node generate-sitemap.js",
+    "prebuild": "npm run generate-sitemap"
   },
   "dependencies": {
+    "date-fns": "^4.1.0",
     "lucide-react": "^0.344.0",
     "react-helmet": "^6.1.0",
     "react-helmet-async": "^2.0.5",
