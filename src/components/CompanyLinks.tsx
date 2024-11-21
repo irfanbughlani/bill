@@ -37,7 +37,7 @@ const CompanyLinks = () => {
                 to={`/${company.id.toLowerCase()}`} // Link dynamically to the company page
                 className={`px-4 py-2 rounded-md shadow-sm text-white font-medium hover:opacity-90 transition duration-200 bg-gradient-to-r ${company.colorClass.from} ${company.colorClass.to}`}
               >
-                {company.name}
+                {company.name} Online Bill
               </Link>
             ))}
           </div>
