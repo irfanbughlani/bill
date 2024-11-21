@@ -4,6 +4,9 @@ import { Zap, Search, AlertCircle, CheckCircle, HelpCircle } from 'lucide-react'
 import type { Company } from '../data/companies';
 import FAQSection from '../components/FAQSection';
 import ProviderContent from '../components/ProviderContent';
+import CompanyLinks from "../components/CompanyLinks";
+
+
 
 interface CompanyPageProps {
   company?: Company; // Make company optional
@@ -97,6 +100,12 @@ const CompanyPage: React.FC<CompanyPageProps> = ({ company }) => {
               </form>
             </div>
           </div>
+               
+          <div>
+  {/* Existing bill-checking section */}
+  <CompanyLinks />
+</div>
+<br></br>
 
           {/* Information Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">

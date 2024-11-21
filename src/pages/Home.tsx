@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import { Zap, ArrowRight, Clock, Download, History, CreditCard } from 'lucide-react';
 import { companies } from '../data/companies';
 import FAQSection from '../components/FAQSection';
+import CompanyDetails from "../components/CompanyDetails";
+
 
 function Home() {
   return (
@@ -124,8 +126,10 @@ function Home() {
           </div>
         </div>
       </div>
-
-      {/* Additional Content Sections */}
+            {/* Company Details Section */}
+                  <CompanyDetails />
+                  
+          {/* Additional Content Sections */}
       <section className="bg-white rounded-lg shadow-md p-6 my-6">
         <h2 className="text-2xl font-semibold text-blue-600 mb-4">Our Services for Quick Online Bill Checks</h2>
         <p className="text-lg">

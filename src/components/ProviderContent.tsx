@@ -37,7 +37,7 @@ const ProviderContent: React.FC<ProviderContentProps> = ({ company }) => {
       <section className="bg-white rounded-lg shadow-lg p-6 mb-6">
         <h2 className={`text-2xl font-semibold ${company.colorClass.icon} mb-4`}>Why Choose Online Bill Checking for {company.name}</h2>
         <ul className="list-disc list-inside text-gray-700 space-y-2">
-          <li>24/7 access to your Online {company.name} bill from anywhere.</li>
+          <li>24/7 access to your Online <a href="https://bill.com.pk" className="text-blue-600 underline">{company.name} bill</a> from anywhere.</li>
           <li>Convenient online bill download and print options for record-keeping.</li>
           <li>No need to visit physical offices or wait in long queues.</li>
           <li>Organize and keep track of your billing history electronically.</li>
@@ -49,7 +49,7 @@ const ProviderContent: React.FC<ProviderContentProps> = ({ company }) => {
       <section className="bg-white rounded-lg shadow-lg p-6 mb-6">
         <h2 className={`text-2xl font-semibold ${company.colorClass.icon} mb-4`}>Understanding Your {company.name} Bill</h2>
         <p className="text-gray-700 mb-4">
-          Your {company.name} duplicate bill provides a breakdown of your electricity consumption, charges, and due date for payments. Here’s what each section means:
+          Your <a href="https://bill.com.pk" className="text-blue-600 underline">{company.name} duplicate bill</a> provides a breakdown of your electricity consumption, charges, and due date for payments. Here’s what each section means:
         </p>
         <ul className="list-disc list-inside text-gray-700 space-y-2">
           <li><strong>Billing Period:</strong> The duration of time covered by this bill.</li>
@@ -82,7 +82,7 @@ const ProviderContent: React.FC<ProviderContentProps> = ({ company }) => {
       <section className="bg-white rounded-lg shadow-lg p-6 mb-6">
         <h2 className={`text-2xl font-semibold ${company.colorClass.icon} mb-4`}>Saving on Your {company.name} Bill</h2>
         <p className="text-gray-700 mb-4">
-          Managing your energy usage can help you save on your {company.name} bill each month. Here are some tips:
+          Managing your energy usage can help you save on your <a href="https://bill.com.pk" className="text-blue-600 underline">{company.name} bill</a> each month. Here are some tips:
         </p>
         <ul className="list-disc list-inside text-gray-700 space-y-2">
           <li>Switch off lights and appliances when not in use.</li>

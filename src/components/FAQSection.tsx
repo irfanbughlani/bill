@@ -11,7 +11,7 @@ function FAQSection({ company }) {
   const faqs = [
     {
       question: 'How do I check my electricity bill online?',
-      answer: 'To check your electricity bill online, select your provider (such as LESCO, K-Electric, WAPDA, etc.), enter your reference or consumer ID, and click "Check Bill." Your bill will appear on the screen for viewing and downloading.',
+      answer: 'To check your electricity bill online, select your provider (such as LESCO, K-Electric, WAPDA, etc.), enter your reference or consumer ID, and click "Check online Bill." Your bill will appear on the screen for viewing and downloading.',
     },
     {
       question: 'Can I view my past electricity bills on bill.com.pk?',
