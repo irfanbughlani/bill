@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "generate-sitemap": "node generate-sitemap.tsx",
+    "generate-sitemap": "node generate-sitemap.js",
     "prebuild": "npm run generate-sitemap"
   },
   "dependencies": {
