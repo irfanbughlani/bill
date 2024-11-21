@@ -21,7 +21,7 @@ function Home() {
       <div className="relative overflow-hidden bg-white rounded-3xl shadow-2xl mb-16 p-8 sm:p-12">
         <div className="relative z-10">
           <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 mb-6 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-            Check Your Electricity Bill Online
+            Check Electricity Bill Online
           </h1>
           <p className="text-xl sm:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Quick and easy access to your electricity bill details from all major providers across Pakistan
