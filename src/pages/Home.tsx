@@ -18,7 +18,7 @@ function Home() {
       </Helmet>
 
       {/* Hero Section */}
-      <div className="relative overflow-hidden bg-white rounded-3xl shadow-2xl mb-16 p-8 sm:p-12">
+      <div className="relative overflow-hidden bg-white rounded-3xl shadow-2xl mb-16 p-8 sm:p-12 flex justify-center items-center">
         <div className="relative z-10">
           <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 mb-6 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
             Check Electricity Bill Online
