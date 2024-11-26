@@ -8,7 +8,7 @@ const companies = [
     url: "/iesco",
     areasServed: ["Islamabad", "Rawalpindi", "Jhelum", "Attock"],
     description: "IESCO ensures reliable power supply to the capital city and surrounding regions.",
-    image: "/images/iesco.png",
+    image: "/images/iesco.webp",
     region: "Islamabad",
     data: [
       { srNo: 1, station: "Islamabad", subStations: "G-6, G-7, G-8, G-9, F-6, F-7, F-8, F-10, I-8, I-9, I-10, I-11, Rawat, Tarnol" },
@@ -29,7 +29,7 @@ const companies = [
     url: "/lesco",
     areasServed: ["Lahore", "Kasur", "Sheikhupura", "Okara"],
     description: "LESCO caters to a diverse consumer base in the provincial capital and neighboring districts.",
-    image: "/images/lesco.png",
+    image: "/images/lesco.webp",
     region: "Lahore",
     data: [
       { srNo: 1, station: "Lahore Station", subStations: "Lahore City, Lahore Cantt, Raiwind, Kahna, Kot Lakhpat, Shalimar, Mughalpura" },
@@ -50,7 +50,7 @@ const companies = [
     url: "/gepco",
     areasServed: ["Gujranwala", "Sialkot", "Narowal", "Gujrat"],
     description: "GEPCO serves industrial and commercial hubs with stable power supply.",
-    image: "/images/gepco.png",
+    image: "/images/gepco.webp",
     region: "Gujranwala",
     data: [
       { srNo: 1, station: "Gujranwala", subStations: "Gujranwala City, Kamoke, Wazirabad, Nowshera Virkan, Ghakhar Mandi" },
@@ -71,7 +71,7 @@ const companies = [
     url: "/fesco",
     areasServed: ["Faisalabad", "Jhang", "Toba Tek Singh", "Sargodha"],
     description: "FESCO powers Pakistan's textile hub and industrial sector.",
-    image: "/images/fesco.png",
+    image: "/images/fesco.webp",
     region: "Faisalabad",
     data: [
       { srNo: 1, station: "Faisalabad", subStations: "Faisalabad City, Jaranwala, Samundri, Tandlianwala, Chak Jhumra" },
@@ -92,7 +92,7 @@ const companies = [
     url: "/mepco",
     areasServed: ["Multan", "Bahawalpur", "Dera Ghazi Khan", "Rajanpur"],
     description: "MEPCO serves the largest area, mixing urban and rural regions in southern Punjab.",
-    image: "/images/mepco.png",
+    image: "/images/mepco.webp",
     region: "Multan",
     data: [
       { srNo: 1, station: "Multan", subStations: "Multan City, Multan Cantt, Mumtazabad, Shujabad, Moosa Pak, S.R.Alam" },
@@ -116,7 +116,7 @@ const companies = [
     url: "/pesco",
     areasServed: ["Peshawar", "Mardan", "Swat", "Hazara"],
     description: "PESCO addresses unique challenges of distributing electricity in Khyber Pakhtunkhwa.",
-    image: "/images/pesco.png",
+    image: "/images/pesco.webp",
     region: "Peshawar",
     data: [
       { srNo: 1, station: "Peshawar", subStations: "Peshawar City, Peshawar Cantt, Hayatabad, University Town, Kohat Road" },
@@ -137,7 +137,7 @@ const companies = [
     url: "/hesco",
     areasServed: ["Hyderabad", "Jamshoro", "Thatta", "Mirpurkhas"],
     description: "HESCO ensures electricity reaches both urban centers and rural areas in Sindh.",
-    image: "/images/hesco.png",
+    image: "/images/hesco.webp",
     region: "Hyderabad",
     data: [
       { srNo: 1, station: "Hyderabad", subStations: "Latifabad, Qasimabad, City, Tando Jam, Hala Naka" },
@@ -158,7 +158,7 @@ const companies = [
     url: "/qesco",
     areasServed: ["Quetta", "Gwadar", "Turbat", "Chaman"],
     description: "QESCO serves Balochistan, the largest province by area with sparse population.",
-    image: "/images/qesco.png",
+    image: "/images/qesco.webp",
     region: "Hyderabad",
     data: [
       { srNo: 1, station: "Quetta", subStations: "Quetta City, Sariab, Brewery, Samungli, Airport Road" },
@@ -179,7 +179,7 @@ const companies = [
     url: "/sepco",
     areasServed: ["Sukkur", "Larkana", "Dadu", "Jacobabad"],
     description: "SEPCO provides electricity to agricultural and residential areas in northern Sindh.",
-    image: "/images/sepco.png",
+    image: "/images/sepco.webp",
     region: "Hyderabad",
     data: [
       { srNo: 1, station: "Sukkur", subStations: "Sukkur City, Rohri, Pano Aqil, Saleh Pat, New Sukkur" },
@@ -200,7 +200,7 @@ const companies = [
     url: "/tesco",
     areasServed: ["Khyber", "Bajaur", "Mohmand", "Orakzai"],
     description: "TESCO powers the tribal areas, focusing on infrastructure improvements.",
-    image: "/images/tesco.png",
+    image: "/images/tesco.webp",
     region: "Hyderabad",
     data: [
       { srNo: 1, station: "Khyber", subStations: "Jamrud, Landi Kotal, Bara, Torkham, Ali Masjid" },
